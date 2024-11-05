@@ -1,0 +1,17 @@
+1.	Lỗi Injection
+a.	HTML Injection
+-	Là loại tấn công mà hacker sẽ tiêm những đoạn mã HTML vào thông qua những lỗ hổng với mục đích thay đổi thiết kế hoặc thông tin của website
+-	Nguy cơ: Thu thập thông tin nhạy cảm, chuyển hướng người dùng đến trang độc hại
+-	Cách phòng chống: Validate mọi input từ người dùng, encode các ký tự đặc biệt
+b.	SQL Injection
+-	Là loại tấn công mà hacker sẽ tiêm những đoạn mã SQL vào thông qua những lỗ hổng với mục đích có thể thao tác trên db để thực thi những câu lệnh nguy hiểm cho hệ thống
+-	Cách phòng chống: Tham số hóa truy vấn, xác thực dữ liệu đầu vào của người dùng
+2.	Unrestricted upload file
+-	Là loại tấn công mà hacker sẽ lợi dụng việc upload file của website không được kiểm soát để lợi dụng tấn công, gây tổn thương hoặc nguy hiểm hơn là chiếm quyền điều khiển server
+-	Cách phòng chống: Thực hiện input validation, dùng minio, phân quyền thư mục upload 
+3.	Clickjacking
+-	Là kỹ thuật lừa người dùng tấn công vào một thứ khác họ nghĩ
+-	Cách phòng chống: Set header csp
+4.	Brutte force
+-	Là hình thức hacker dùng các phương thức để dò thông tin xác thực của một tài khoản có thể nhằm thực hiện các thao tác có lợi cho chúng và gây hại cho người dùng
+-	Cách phòng chống: Đặt tên mật khẩu có tính bảo mật cao, thay đổi mật khẩu thường xuyên, tài khoản đăng nhập sai nhiều lần thì bị khóa, xác thực 2 yếu tố
